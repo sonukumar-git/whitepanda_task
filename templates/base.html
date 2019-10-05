@@ -1,0 +1,142 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>whitepanda</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css'%}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<cript src='https://kit.fontawesome.com/a076d05399.js'></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<style>
+
+body
+{
+  background-color:#FFF7F7;
+  font-family:sans-serif;
+  color:darkgray;
+
+
+}
+
+</style>
+
+
+<body style="background-color:#FFF7F7;">
+    <div class="sidebar">
+        <br>
+        <br>
+        <br>
+        <br>
+            <a href="/">
+                    <span class="glyphicon glyphicon-th-large"></span>
+                  </a>
+                  <a href="#">
+                        <span class="glyphicon glyphicon-search"></span>
+                      </a><a href="#">
+                            <span class="glyphicon glyphicon-th-list"></span>
+                          </a>
+        
+    </div>
+    <div class="header">
+            <a style="margin-left: 200px;" href="http://www.whitepanda.in/" class="logo">
+                <img style="width:120px;height: 22px;" src="{% static 'logo.png'%}" alt="whitepanda" itemprop="logo">
+                
+                
+                
+                </a>
+            <div class="header-right">
+                 <a  href="index.html" class="notification">
+                <i class="fa fa-bell-o" style="font-size:26px;color:gray;"></i>
+                
+              
+                    <span class="badge">699</span>
+                 </a>    
+
+                 &nbsp;
+                 &nbsp;
+                 &nbsp;
+                 
+              
+              <button class="btn btn-default  btn-circle btn-xl notification2" style="border-radius: 90%">AB</button>
+            </div>
+        </div>
+
+
+        
+      {% block body_block %}
+
+      {% endblock %}
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<br>
+<br>
+<footer class="page-footer font-small mdb-color darken-3 pt-4 " style="background-color: white;">
+
+        <!-- Footer Elements -->
+        <div class="container">
+      
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+      
+            <!--Grid column-->
+            <div class="col-md-12">
+                    <a href="#" class="fa fa-twitter social"></a>
+                    <a href="#" class="fa fa-linkedin social"></a>
+                    <a href="#" class="fa fa-instagram social"></a>
+                    <a href="#" class="fa fa-facebook social"></a>
+      
+             
+      
+            </div>
+            <!--Grid column-->
+      
+          </div>
+          <!--Grid row-->
+      
+        </div>
+        <!-- Footer Elements -->
+      
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+            Copyright @ 2019 White Panda Media Pvt.Ltd.
+            <br>
+            All rights reserved
+            <br>
+            <br>
+            <u><a href="#">Privacy policy</a></u> &nbsp; |
+            &nbsp;<u><a href="#">Terms of service</a></u> &nbsp; |
+            &nbsp;<u><a href="#">Service Agreement</a></u> &nbsp;|
+            &nbsp;<u><a href="#">Contact us</a></u> 
+            
+         
+        </div>
+        <br>
+        <br>
+        <!-- Copyright -->
+      
+      </footer>
+      <!-- Footer -->
+
+
+
+</body>
+</html>
